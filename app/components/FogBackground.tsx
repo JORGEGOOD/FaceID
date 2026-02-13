@@ -12,7 +12,7 @@ export default function FogBackground() {
 
     async function loadVanta() {
       if (!vantaEffect && vantaRef.current) {
-        // VANTA = (await import("vanta/dist/vanta.fog.min")).default;
+        VANTA = (await import("vanta/dist/vanta.fog.min")).default;
 
         setVantaEffect(
           VANTA({
